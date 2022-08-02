@@ -13,9 +13,36 @@ h1 {
     margin: 0;
 }
 
+h3 {
+    font-family: "calibri";
+    font-size: 30px;
+    color: #262626;
+    margin: 0;
+}
+
 p {
     font-family: "Roboto", sans-serif;
     color: #0D0D0D;
+}
+
+ul {
+    position: relative;
+    left: -10px;
+    list-style: none;
+    text-indent: -1em;
+}
+
+li {
+    font-family: "Roboto", sans-serif;
+    color: #0D0D0D;
+    text-indent: -1em;
+}
+
+li::before {
+    content: "-";
+    color: #0D0D0D;
+    font-weight: bold;
+    padding-right: 10px;
 }
 
 a {
@@ -67,6 +94,20 @@ hr {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+.intro {}
+
+.current {}
+
+.projects {}
+
+.other {}
+
+.contact{
+    width: 100%;
+    position: relative;
+    top: -60px;
 }
 
 .border {
