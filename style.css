@@ -38,6 +38,21 @@ h3 {
     margin: 0;
 }
 
+h4 {
+    font-family: "calibri";
+    font-size: 23px;
+    color: #262626;
+    margin: 0;
+}
+
+h5 {
+    font-family: "calibri";
+    font-size: 13px;
+    color: #262626;
+    font-weight: 300;
+    margin: 0;
+}
+
 p {
     font-family: "Roboto", sans-serif;
     color: #0D0D0D;
@@ -114,13 +129,10 @@ hr {
     align-items: flex-start;
 }
 
-.intro {}
-
-.current {}
-
-.projects {}
-
-.other {}
+.greylink {
+    color: #7F7F7F;
+    font-weight: normal;
+}
 
 .contact {
     width: 100%;
