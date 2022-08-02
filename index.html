@@ -60,29 +60,78 @@
         <p>
           During sixth form I read <i>Generative Deep Learning</i> by D. Foster which got me
           really excited about applying ML to generative tasks (specifically for images: it's
-          amazing how we can use such rigid rules to produce organic-looking shapes). After
-          participating in Google CodeIn 2019 (for TensorFlow), I wanted to apply what I had learnt
-          to a more difficult project, so I created my own implementation of
-          <a href="https://arxiv.org/pdf/1512.09300.pdf" class="greylink">a VAE-GAN</a>.
+          amazing how we can use such rigid rules to produce organic shapes). After participating
+          in Google CodeIn 2019 (for TensorFlow), I wanted to apply what I had learnt to a more
+          difficult project, so I created my own implementation of a
+          <a href="https://arxiv.org/pdf/1512.09300.pdf" class="greylink">VAE-GAN</a>.
         </p>
         <p>
           The VAE-GAN framework trains a generator by combining the losses from a VAE and a GAN.
           The VAE loss focusses more on correctly reconstructing the content of an image, while
           the GAN loss is more focused on creating an image that has a realistic style, so
           combining the two (hopefully) gives us the advantages of both. I trained the model of my
-          own dataset of faces scraped from IMDB to produce the results above. Results
-          <a href="https://drive.google.com/drive/u/0/folders/1mmFMUx0oT5qRaAf59kWFJytzVsdyd7sk" class="greylink">here</a>.
+          own dataset of faces scraped from IMDB to produce 
+          <a href="https://github.com/JosephHRance/JosephHRance.github.io/raw/master/vaegan.png" class="greylink">these</a>
+          results.
         </p>
       </div>
       <hr style="height: 2px;"><br>
       <div class="rlfencing">
-        
+        <h4 style="position: relative; top: 10px;">RL fencing agent</h4>
+        <h5 style="position: relative; top: 5px;"><i>(2020-2021)</i></h5>
+        <p>
+          The way professionals play games such as chess or go has been
+          <a href="https://www.youtube.com/watch?v=WXuK6gekU1Y" class="greylink">revolutionised with the use of Reinforcement Learning</a>
+          (RL) agents that are able play at a substantially higher level than the best humans.
+          After reading Reinforcement Learning by Sutton and Barto, I wanted to see if I could
+          create a similar agent in the sport of fencing.
+        </p>
+        <p>
+          The difficulty with this is that fencing is a lot messier than board games: the state
+          space is difficult to define, there are many more factors that could affect decisions,
+          and decisions are made continuously (we don't take turns).
+        </p>
+        <p>
+          My idea was to manually classify each action in a bank of videos of myself fencing into a
+          predefined action class and then train a RL agent that uses this information along with
+          the current match state (score, time, action history, ...) to predict the value of each
+          possible action at any point in the match, where the value of winning a match is 1.
+        </p>
+        <p>
+          A value function for a state action pair in fencing is actually very useful. You could
+          use it to predict which fencer is more likely to win, which actions are most effective at
+          each point, and what a fencer's strengths and weaknesses are. Analysis of the model's
+          weights indicated that the actions which had the most impact on the value were a stop hit
+          (lower value) and a fleche (higher value). The latter did not appear in the dataset, so
+          we can discount this, but the former makes some sense because scoring a stop hit doesn't
+          really give you as much to build from in your next hit (although it is possible this
+          prediction is due to me going for stop hits when I'm out of ideas).
+        </p>
+        <p>
+          This project is something I would like to revisit: I think it would benefit from a more
+          effective data collection strategy (I imagine some kind of pose estimation or learnt
+          action encoding). Nonetheless, I really enjoyed this project because I think RL will be
+          increasingly relevant in the future, as it teaches an agent to be intelligent rather than
+          to mimic something that is intelligent.
+        </p>
+        <div style="position: relative; top: -5px">
+          <img src="rl fencing.png" style="width: 97%">
+          <p style="position: relative; top: -18px; left: 5px; font-size: 13px;">
+            <i>Plots of value estimations and true score over time</i>
+          </p>
+        </div>
       </div>
+      <hr style="height: 2px; position: relative; top: -25px;">
       <div class="robotarm">
-        
+        <h4 style="position: relative; top: 10px;">Robot arm</h4>
+        <h5 style="position: relative; top: 5px;"><i>(2020-2021)</i></h5>
+        <p>TODO</p>
       </div>
+      <hr style="height: 2px;"><br>
       <div class="urop">
-        
+        <h4 style="position: relative; top: 10px;">ML backdoors via preprocessing</h4>
+        <h5 style="position: relative; top: 5px;"><i>(SUMMER 2022)</i></h5>
+        <p>TODO</p>
       </div>
     </div>
     <hr><br><br>
