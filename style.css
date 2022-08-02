@@ -1,3 +1,21 @@
+@media only screen and (max-width: 750px) { 
+    .largerscreen { 
+      display: none; 
+    } 
+}
+
+@media only screen and (max-width: 600px) { 
+    .largescreen { 
+      display: none; 
+    } 
+}
+
+@media only screen and (min-width: 750px) { 
+    .smallerscreen { 
+      display: none; 
+    } 
+}
+
 body {
     padding-top: 40px;
     padding-left: 20px;
@@ -104,10 +122,17 @@ hr {
 
 .other {}
 
-.contact{
+.contact {
     width: 100%;
     position: relative;
     top: -60px;
+}
+
+.invislink {
+    position: relative;
+    height: 24.5px;
+    width: 24.5px;
+    cursor: pointer;
 }
 
 .border {
