@@ -1,7 +1,13 @@
+@media only screen and (max-width: 900px) { 
+    .largestscreen { 
+      display: none; 
+    }
+}
+
 @media only screen and (max-width: 750px) { 
     .largerscreen { 
       display: none; 
-    } 
+    }
 }
 
 @media only screen and (max-width: 600px) { 
@@ -13,15 +19,23 @@
 @media only screen and (min-width: 750px) { 
     .smallerscreen { 
       display: none; 
-    } 
-}
-
-body {
-    padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 700px;
-    margin: auto;
+    }
+    .largerup {
+        top: -20px;
+    }
+    .largerleft {
+        width: 80%;
+        display: inline-block;
+        position: relative;
+        left: 15px;
+        top: -10px;
+    }
+    .sidetext {
+        display: inline-block;
+        width: 100px;
+        position: relative;
+        top: 20px;
+    }
 }
 
 h1 {
@@ -84,11 +98,25 @@ a {
     font-weight: bold;
 }
 
+a:hover {
+	color: #0004FF;
+    font-weight: bold;
+}
+
 hr {
     max-width: 100px;
     margin: 0px;
     background-color: #1E1E1E;
     height: 3px;
+    border: none;
+}
+
+.main {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 700px;
+    margin: auto;
 }
 
 .top {
@@ -117,7 +145,7 @@ hr {
 
 .face {
     position: relative;
-    right: 10px;
+    right: 15px;
 }
 
 .cv {
@@ -135,9 +163,10 @@ hr {
 }
 
 .contact {
-    width: 100%;
+    width: 102%;
+    left: -5px;
     position: relative;
-    top: -60px;
+    top: 20px;
 }
 
 .invislink {
@@ -145,6 +174,14 @@ hr {
     height: 24.5px;
     width: 24.5px;
     cursor: pointer;
+}
+
+.jr {
+    right: -0.75%;
+    position: fixed;
+    text-align: center;
+    bottom: -3%;
+    height: 10%;
 }
 
 .border {
