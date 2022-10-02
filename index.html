@@ -98,16 +98,6 @@
             possible action at any point in the match, where the value of winning a match is 1.
           </p>
           <p>
-            A value function for a state action pair in fencing is actually very useful. You could
-            use it to predict which fencer is more likely to win, which actions are most effective at
-            each point, and what a fencer's strengths and weaknesses are. Analysis of the model's
-            weights indicated that the actions which had the most impact on the value were a stop hit
-            (lower value) and a fleche (higher value). The latter did not appear in the dataset, so
-            we can discount this, but the former makes some sense because scoring a stop hit doesn't
-            really give you as much to build from in your next hit (although it is possible this
-            prediction is due to me going for stop hits when I'm out of ideas).
-          </p>
-          <p>
             This project is something I would like to revisit: I think it would benefit from a more
             effective data collection strategy (I imagine some kind of pose estimation or learnt
             action encoding). Nonetheless, I really enjoyed this project because I think RL will be
