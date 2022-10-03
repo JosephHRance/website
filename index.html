@@ -139,16 +139,13 @@
           <h4 style="position: relative; top: 10px;">ML backdoors via preprocessing</h4>
           <h5 style="position: relative; top: 5px;"><i>(SUMMER 2022)</i></h5>
           <p>
-            I am currently doing a summer internship at the Cambridge University Computer
-            Laboratory, in which I am researching how to insert backdoors into Machine Learning
-            models. The idea is to covertly modify someone's model so that it retains high accuracy
-            on the dataset (so the backdoor is not found), but when a certain trigger transformation
-            is applied to an image that is passed to the model (for example, this could be a
-            inserting a specific pattern), the model has new behaviour. This could potentially be
-            very dangerous (see:
-            <a href="https://arxiv.org/pdf/1708.06733.pdf" class="greylink">BADNETs</a>
-            ). The idea I am investigating is a different threat model for inserting the backdoor
-            trigger by different preprocessing techniques.
+            I have recently finished a summer internship at the University of Cambridge Computer
+            Laboratory where I wrote a <a href="https://arxiv.org/abs/2209.15139" class="greylink">paper</a>
+            introducing three new backdoors for machine learning models. These backdoors are
+            inserted by manipulating data augmentation, making them more practical than many
+            previous techniques. This paper demonstrates that is is necessary to be more aware of
+            the security issues that using open source implementations of components in the ML
+            pipeline can introduce.
           </p>
         </div>
       </div>
