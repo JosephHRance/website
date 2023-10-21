@@ -5,169 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
     <title>Joseph Rance</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="main">
       <div class="top">
+        <div class="face largescreen">
+            <img src="images/face.png" style="height: 190px;">
+        </div>
+        <div  style="position:relative;left:10px;top:4px">
           <div class="title">
               <h1 class="name">Joseph Rance</h1>
-              <img src="images/email.png" class="email">
           </div>
-          <div class="face largescreen">
-              <img src="images/face.png" style="height: 190px;">
-          </div>
-      </div>
-      <div class="intro">
-        <p>
-            Hello, thanks for visiting my personal webpage! I am a computer science student about to
-            begin my second year at the University of Cambridge (Robinson College).
-        </p>
-        <p>
-            I am primarily interested in Machine Learning because I love how simple, mathematical rules
-            can create complex systems with a deeper, fundamental understanding of a problem than what
-            would be otherwise possible. I think ML has amazing practical applications for many 
-            disciplines because we can deploy adaptable, cutting edge ML technology on a massive scale.
-        </p>
-        <p>
-            I am also interested in computer security because I think it is really exciting to take a
-            product and, rather than asking "what does this do?", ask "what <i>can</i> this do?". I think,
-            as Machine Learning is used more and more in every day life, the role of security in ML
-            will become increasingly relevant in protecting our privacy.
-        </p>
-        <div class="cv">
-          <img src="images/cv.svg" width="20px">
-          <a href="https://josephhrance.github.io/Joseph%20Rance%20CV.pdf">CV (pdf)</a>
-        </div>
-      </div>
-      <hr><br><br>
-      <div class="current">
-        <h3>Currently, I am</h3>
-        <ul>
-          <li>About to begin my second year of Computer Science at the University of Cambridge (class I in first year)</li>
-          <li>Doing a research internship at the University of Cambridge Computer Laboratory</li>
-          <li>Reading <i>mindf*ck</i> by Chritoper Wylie and <i>Pattern Recognition and Machine Learning</i> by Christopher Bishop</li>
-        </ul>
-      </div>
-      <hr><br><br>
-      <div class="projects">
-        <h3>Projects</h3>
-        <div class="vaegan">
-          <h4 style="position: relative; top: 10px;">VAE-GAN</h4>
-          <h5 style="position: relative; top: 5px;"><i>(2020-2021)</i></h5>
           <p>
-            During sixth form I read <i>Generative Deep Learning</i> by D. Foster which got me
-            really excited about applying ML to generative tasks (specifically for images: it's
-            amazing how we can use such rigid rules to produce organic shapes). After participating
-            in Google CodeIn 2019 (for TensorFlow), I wanted to apply what I had learnt to a more
-            difficult project, so I created my own implementation of a
-            <a href="https://arxiv.org/pdf/1512.09300.pdf" class="greylink">VAE-GAN</a>.
+            I am a third year CS student at the University of Cambridge research in the
+            intersection of ML and security. I'm also a competitive fencer, having represented
+            Belgium in five U20 world cups.
           </p>
-          <p>
-            The VAE-GAN framework trains a generator by combining the losses from a VAE and a GAN.
-            The VAE loss focusses more on correctly reconstructing the content of an image, while
-            the GAN loss is more focused on creating an image that has a realistic style, so
-            combining the two (hopefully) gives us the advantages of both. I trained the model of my
-            own dataset of faces scraped from IMDB to produce 
-            <a href="https://josephhrance.github.io/images/vaegan.png" class="greylink">these</a>
-            results.
-          </p>
-        </div>
-        <hr><br>
-        <div class="rlfencing">
-          <h4 style="position: relative; top: 10px;">RL fencing agent</h4>
-          <h5 style="position: relative; top: 5px;"><i>(2020-2021)</i></h5>
-          <p>
-            The way professionals play games such as chess or go has been
-            <a href="https://www.youtube.com/watch?v=WXuK6gekU1Y" class="greylink">revolutionised with the use of Reinforcement Learning</a>
-            (RL) agents that are able play at a substantially higher level than the best humans.
-            After reading Reinforcement Learning by Sutton and Barto, I wanted to see if I could
-            create a similar agent in the sport of fencing.
-          </p>
-          <p>
-            The difficulty with this is that fencing is a lot messier than board games: the state
-            space is difficult to define, there are many more factors that could affect decisions,
-            and decisions are made continuously (we don't take turns).
-          </p>
-          <p>
-            My idea was to manually classify each action in a bank of videos of myself fencing into a
-            predefined action class and then train a RL agent that uses this information along with
-            the current match state (score, time, action history, ...) to predict the value of each
-            possible action at any point in the match, where the value of winning a match is 1.
-          </p>
-          <p>
-            This project is something I would like to revisit: although it produced some interesting
-            results, I think it would benefit from a more effective data collection strategy. Nonetheless,
-            I really enjoyed this project because I think RL will be increasingly relevant in the future.
-          </p>
-          <div class="largerscreen" style="position: relative; top: -5px">
-            <img src="images/rl fencing.png" style="width: 97%">
-            <p style="position: relative; top: -18px; left: 5px; font-size: 13px;">
-              <i>Plots of value estimations and true score over time</i>
-            </p>
-          </div>
-        </div>
-        <hr style="position: relative;" class="largerup">
-        <br class="smallerscreen">
-        <div class="robotarm">
-          <h4 style="position: relative; top: 10px;">Robot arm</h4>
-          <h5 style="position: relative; top: 5px;"><i>(2020-2021)</i></h5>
-          <div>
-            <div class="largerscreen sidetext">
-              <img src="images/object detection.png" style="width: 100%;">
-              <p style="font-size: 13px; position: relative; top: -12px;">
-                <i>centres of detected objects</i>
-              </p>
+          <div class="bottom">
+            <img src="images/email.png" class="email">
+            <div class="links">
+              <a href="https://josephhrance.github.io/Joseph%20Rance%20CV.pdf" style="position:relative;right:10px"><img src="images/cv.svg" width="28px" style="position: relative;top:2px"></a>
+              <a href="https://github.com/Joseph-Rance" style="position:relative;right:4px"><img src="images/github.svg" width="20px"></a>
+              <a href="https://www.linkedin.com/in/josephrance/"><img src="images/linkedin.svg" width="18px"></a>
+              <div style="color: white;position:relative;left:4px">:)</div>
             </div>
-            <p class="largerleft">
-              As president of my sixth form's
-              <a href="https://github.com/Joseph-Rance/Computing-Soc-old" class="greylink">computing society</a>,
-              I organised weekly tutorials, talks, debates, and competitions. I won a Jack Petchey
-              award for this, which included £250 to spend on the society. Over the course of a few
-              months, I ran a project where we modelled, printed, and assembled a robotic arm. We
-              then wrote code that uses a camera on the arm to automatically detect objects placed in
-              front of it and pick them up. The focus of this project was on integrating the
-              components together and creating efficient code that could run on the arm's minimal
-              computing power.
-            </p>
           </div>
         </div>
-        <hr style="height: 3px; position: relative;"><br><br>
-        <div class="urop">
-          <h4 style="position: relative; top: 10px;">Augmentation Backdoors paper</h4>
-          <h5 style="position: relative; top: 5px;"><i>(SUMMER 2022)</i></h5>
-          <p>
-            I have recently finished a summer internship at the University of Cambridge Computer
-            Laboratory where I wrote a <a href="https://arxiv.org/abs/2209.15139" class="greylink">paper</a>
-            introducing three new backdoors for machine learning models. These backdoors are
-            inserted by manipulating data augmentation, making them more practical than many
-            previous techniques. This paper demonstrates that is is necessary to be more aware of
-            the security issues that can arise from using open source implementations of components 
-            in the ML pipeline.
-          </p>
-        </div>
       </div>
-      <hr><br><br>
-      <div class="other">
-        <h3>Other interests</h3>
-        <p style="max-width: 500px;">
-          I am also a keen fencer, having fenced for both the English and Belgian national teams. I
-          am currently the Eastern Region senior champion and I am ranked third in Belgium.
-        </p>
-      </div>
-      <div class="largerscreen">
-        <img src="images/contact.svg" class="contact">
-        <div class="invislink" style="top: -40.5px; left: 625.5px" onclick="location.href='https://www.linkedin.com/in/josephrance/';"></div>
-        <div class="invislink" style="top: -66px; left: 656.5px" onclick="location.href='https://github.com/Joseph-Rance';"></div>
-      </div>
-      <div class="smallerscreen">
-        <hr><br>
-        <a href="https://github.com/Joseph-Rance">GitHub</a> |
-        <a href="https://www.linkedin.com/in/josephrance/">LinkedIn</a>
-        <div style="color: white">:)</div>
+      <div class="publications">
+        <br>
+        <h3>Publications</h3>
+        <a href="">[Under review]</a> Modifying backdoor attacks to compromise fairness in federated learning (<u>Joseph Rance</u>, Filip Svoboda)
+        <br><br>
+        <a href="https://openreview.net/pdf?id=QvrIHZ04iu7">[BANDS @ ICLR '23]</a> Augmentation Backdoors (<u>Joseph Rance</u>, Yiren Zhao, Ilia Shumailov, Robert D. Mullins )
       </div>
     </div>
-    <img src="images/br.svg" class="jr largestscreen">
   </body>
 </html>
