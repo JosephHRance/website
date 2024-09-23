@@ -81,3 +81,9 @@ a:hover {
 .s {
     border: 1px solid black;
 }
+
+@media screen and (max-width: 460px) { 
+    .largescreen { 
+      display: none
+    }
+}
