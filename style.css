@@ -34,9 +34,9 @@ a:hover {
 
 .main {
     padding-top: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 507px;
     margin: auto;
 }
 
@@ -82,7 +82,7 @@ a:hover {
     border: 1px solid black;
 }
 
-@media screen and (max-width: 460px) { 
+@media screen and (max-width: 440px) { 
     .largescreen { 
       display: none
     }
