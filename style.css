@@ -82,6 +82,14 @@ a:hover {
     border: 1px solid black;
 }
 
+.hidden::selection {
+    background: #ffffff;
+}
+
+.hidden::-moz-selection {
+    background: #ffffff;
+}
+
 @media screen and (max-width: 440px) { 
     .largescreen { 
       display: none
