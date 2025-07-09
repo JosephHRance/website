@@ -36,15 +36,16 @@ a:hover {
     padding-top: 80px;
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 507px;
+    max-width: 500px;
     margin: auto;
 }
 
 .top {
     height: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
+    gap: 10px;
 }
 
 .title {
@@ -66,7 +67,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    right: 35px;
+    right: 25px;
 }
 
 .email {
@@ -90,7 +91,7 @@ a:hover {
     background: #ffffff;
 }
 
-@media screen and (max-width: 440px) { 
+@media screen and (max-width: 420px) { 
     .largescreen { 
       display: none
     }
