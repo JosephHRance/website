@@ -36,7 +36,7 @@ a:hover {
     padding-top: 80px;
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 550px;
+    max-width: 535px;
     margin: auto;
 }
 
@@ -67,11 +67,11 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    right: 25px;
+    right: 2px;
 }
 
 .email {
-    width: 150px;
+    width: 200px;
 }
 
 .contact {
